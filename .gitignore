@@ -5,6 +5,10 @@
 *.bak
 *.org
 
+# Scratchpad
+############
+**/scratchpad
+
 # Logs
 #######
 logs
@@ -25,15 +29,8 @@ go.sum
 ##########
 .vscode
 
-# Scratchpad
-############
-**/scratchpad
 
 # DEP Files and Folders
 #######################
 *.lock
 /vendor
-
-# Reference Only Documentation
-###############################
-/docs/RFCs

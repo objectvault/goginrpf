@@ -1,4 +1,4 @@
-module objectvault/goginrpf
+module github.com/objectvault/goginrpf
 
 go 1.15
 

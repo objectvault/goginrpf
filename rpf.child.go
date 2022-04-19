@@ -63,7 +63,7 @@ func (r *ChildProcessor) SetResponseData(data *gin.H) {
 	r.Parent.SetResponseData(data)
 }
 
-func (r *ChildProcessor) SetReponseDataValue(name string, value interface{}) {
+func (r *ChildProcessor) SetResponseDataValue(name string, value interface{}) {
 	// ONLY Process ROOT Maintains Data Value
 	r.Parent.SetResponseDataValue(name, value)
 }

@@ -75,8 +75,8 @@ func (r *ProcessorRoot) SetResponseData(data *gin.H) {
 	r.responseData = data
 }
 
-// SetReponseDataValue Set A Property in the Response Data
-func (r *ProcessorRoot) SetReponseDataValue(name string, value interface{}) {
+// SetResponseDataValue Set A Property in the Response Data
+func (r *ProcessorRoot) SetResponseDataValue(name string, value interface{}) {
 	// Do we already have response data?
 	if r.responseData == nil { // NO: Initialize
 		r.responseData = &gin.H{}

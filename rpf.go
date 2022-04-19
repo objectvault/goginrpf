@@ -20,17 +20,17 @@ import (
 // TODO: Current Processors don't allow for asynchronous processing!!
 
 type GINRequestProcessor interface {
-	IsFinished() bool                                   // Has Processor Terminated?
-	Aborted() bool                                      // Was Processor Aborted
-	Run() GINRequestProcessor                           // Run Processor
-	GinContext() *gin.Context                           // GIN Request Context
-	Abort(code int, data *gin.H)                        // Abort GIN Request with Error
-	Answer(code int)                                    // Complete GIN Request with Code
-	AnswerWithData(code int, data *gin.H)               // Complete GIN Request with Code and Data
-	ResponseCode() int                                  // Current Request Response Code
-	ResponseData() interface{}                          // Current Resquet Response Data
-	SetResponseData(data *gin.H)                        // SET GIN Response Message
-	SetReponseDataValue(name string, value interface{}) // SET Response Message Object Value
+	IsFinished() bool                                    // Has Processor Terminated?
+	Aborted() bool                                       // Was Processor Aborted
+	Run() GINRequestProcessor                            // Run Processor
+	GinContext() *gin.Context                            // GIN Request Context
+	Abort(code int, data *gin.H)                         // Abort GIN Request with Error
+	Answer(code int)                                     // Complete GIN Request with Code
+	AnswerWithData(code int, data *gin.H)                // Complete GIN Request with Code and Data
+	ResponseCode() int                                   // Current Request Response Code
+	ResponseData() interface{}                           // Current Resquet Response Data
+	SetResponseData(data *gin.H)                         // SET GIN Response Message
+	SetResponseDataValue(name string, value interface{}) // SET Response Message Object Value
 }
 
 type GINProcessorContext interface {

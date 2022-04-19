@@ -65,7 +65,7 @@ func (r *ChildProcessor) SetResponseData(data *gin.H) {
 
 func (r *ChildProcessor) SetReponseDataValue(name string, value interface{}) {
 	// ONLY Process ROOT Maintains Data Value
-	r.Parent.SetReponseDataValue(name, value)
+	r.Parent.SetResponseDataValue(name, value)
 }
 
 func (r *ChildProcessor) Has(name string) bool {

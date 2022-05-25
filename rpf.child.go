@@ -58,6 +58,10 @@ func (r *ChildProcessor) ResponseData() interface{} {
 	return r.Parent.ResponseData()
 }
 
+func (r *ChildProcessor) SetResponseCode(code int) {
+	r.Parent.SetResponseCode(code)
+}
+
 func (r *ChildProcessor) SetResponseData(data *gin.H) {
 	// ONLY Process ROOT Maintains Data Value
 	r.Parent.SetResponseData(data)

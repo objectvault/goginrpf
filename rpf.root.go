@@ -69,6 +69,12 @@ func (r *ProcessorRoot) ResponseData() interface{} {
 	return r.responseData
 }
 
+// SetResponseData Set Response Code
+func (r *ProcessorRoot) SetResponseData(code int) {
+	// Set New Response Code
+	r.responseCode = code
+}
+
 // SetResponseData Set Response Data
 func (r *ProcessorRoot) SetResponseData(data *gin.H) {
 	// Set New Response Data
@@ -133,16 +139,6 @@ func (r *ProcessorRoot) SkipToEnd() {
 // Title Request Title
 func (r *ProcessorRoot) Title() string {
 	return r.title
-}
-
-// SetCode Set Response Code
-func (r *ProcessorRoot) SetCode(code int) int {
-	// Current State
-	current := r.responseCode
-
-	// Set New Response Code
-	r.responseCode = code
-	return current
 }
 
 func (r *ProcessorRoot) Has(name string) bool {

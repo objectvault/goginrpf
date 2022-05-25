@@ -28,7 +28,8 @@ type GINRequestProcessor interface {
 	Answer(code int)                                     // Complete GIN Request with Code
 	AnswerWithData(code int, data *gin.H)                // Complete GIN Request with Code and Data
 	ResponseCode() int                                   // Current Request Response Code
-	ResponseData() interface{}                           // Current Resquet Response Data
+	ResponseData() interface{}                           // Current Request Response Data
+	SetResponseCode(code int)                            // SET Request Response Data
 	SetResponseData(data *gin.H)                         // SET GIN Response Message
 	SetResponseDataValue(name string, value interface{}) // SET Response Message Object Value
 }

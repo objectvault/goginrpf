@@ -70,7 +70,7 @@ func (r *ProcessorRoot) ResponseData() interface{} {
 }
 
 // SetResponseData Set Response Code
-func (r *ProcessorRoot) SetResponseData(code int) {
+func (r *ProcessorRoot) SetResponseCode(code int) {
 	// Set New Response Code
 	r.responseCode = code
 }
